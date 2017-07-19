@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var rightEye: UIView!
+    @IBOutlet weak var leftEye: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        rightEye.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 5 / 6)
+        leftEye.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 6)
     }
 
     override func didReceiveMemoryWarning() {

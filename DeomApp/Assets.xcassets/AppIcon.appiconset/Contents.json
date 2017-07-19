@@ -33,13 +33,12 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "120.png",
+      "filename" : "zz.png",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "螢幕快照 2017-07-17 下午8.04.08.png",
+      "size" : "60x60",
       "scale" : "3x"
     },
     {
