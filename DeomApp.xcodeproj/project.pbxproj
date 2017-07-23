@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C033E5281F1CD8D7001E2597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033E5271F1CD8D7001E2597 /* AppDelegate.swift */; };
-		C033E52A1F1CD8D7001E2597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033E5291F1CD8D7001E2597 /* ViewController.swift */; };
+		C033E52A1F1CD8D7001E2597 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033E5291F1CD8D7001E2597 /* HomeController.swift */; };
 		C033E52D1F1CD8D7001E2597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C033E52B1F1CD8D7001E2597 /* Main.storyboard */; };
 		C033E52F1F1CD8D7001E2597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C033E52E1F1CD8D7001E2597 /* Assets.xcassets */; };
 		C033E5321F1CD8D7001E2597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C033E5301F1CD8D7001E2597 /* LaunchScreen.storyboard */; };
+		C07B08F91F25258A00600764 /* HotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B08F81F25258A00600764 /* HotViewController.swift */; };
+		C0A4A5441F25076500AB68C7 /* CamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4A5431F25076500AB68C7 /* CamController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C033E5241F1CD8D7001E2597 /* DeomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C033E5271F1CD8D7001E2597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C033E5291F1CD8D7001E2597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C033E5291F1CD8D7001E2597 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		C033E52C1F1CD8D7001E2597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C033E52E1F1CD8D7001E2597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C033E5311F1CD8D7001E2597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C033E5331F1CD8D7001E2597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07B08F81F25258A00600764 /* HotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotViewController.swift; sourceTree = "<group>"; };
+		C0A4A5431F25076500AB68C7 /* CamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				C033E5271F1CD8D7001E2597 /* AppDelegate.swift */,
-				C033E5291F1CD8D7001E2597 /* ViewController.swift */,
+				C033E5291F1CD8D7001E2597 /* HomeController.swift */,
+				C07B08F81F25258A00600764 /* HotViewController.swift */,
+				C0A4A5431F25076500AB68C7 /* CamController.swift */,
 				C033E52B1F1CD8D7001E2597 /* Main.storyboard */,
 				C033E52E1F1CD8D7001E2597 /* Assets.xcassets */,
 				C033E5301F1CD8D7001E2597 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C033E52A1F1CD8D7001E2597 /* ViewController.swift in Sources */,
+				C07B08F91F25258A00600764 /* HotViewController.swift in Sources */,
+				C033E52A1F1CD8D7001E2597 /* HomeController.swift in Sources */,
 				C033E5281F1CD8D7001E2597 /* AppDelegate.swift in Sources */,
+				C0A4A5441F25076500AB68C7 /* CamController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +287,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.darren.DeomApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.darren.DeomApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -316,6 +324,7 @@
 				C033E5381F1CD8D7001E2597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

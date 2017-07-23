@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vD6-mH-AbZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,55 +9,300 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeomApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="DeomApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="om9-oC-Ptl">
-                                <rect key="frame" x="122" y="300" width="130" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aJA-YR-5V7">
-                                        <rect key="frame" x="8" y="8" width="114" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.87066434199999998" green="1" blue="0.99206788589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.66408976097949968" blue="0.52967011232858718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-e9-qcu">
-                                <rect key="frame" x="266" y="265" width="20" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.66408976099999995" blue="0.52967011230000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1wN-Xb-c6c">
-                                <rect key="frame" x="84" y="265" width="20" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.66408976099999995" blue="0.52967011230000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zen" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-nQ-4As">
-                                <rect key="frame" x="116" y="67" width="143" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="zOF-6Y-lCW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.87066434204250576" green="1" blue="0.99206788590980477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="homeS" id="dfs-xY-70J"/>
+                    <navigationItem key="navigationItem" id="CWu-He-Hhm"/>
                     <connections>
-                        <outlet property="leftEye" destination="1wN-Xb-c6c" id="udK-jx-Q9s"/>
-                        <outlet property="rightEye" destination="HQG-e9-qcu" id="a51-or-3eD"/>
+                        <segue destination="KRx-CX-qF0" kind="show" identifier="toCamController" id="6xs-1o-D1L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="984.79999999999995" y="132.68365817091455"/>
+        </scene>
+        <!--Cam Controller-->
+        <scene sceneID="zcr-Ef-Hlb">
+            <objects>
+                <viewController id="KRx-CX-qF0" customClass="CamController" customModule="DeomApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="YbL-rw-JcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CAM-1" translatesAutoresizingMaskIntoConstraints="NO" id="njz-KH-07d">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Dw4-al-cdu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SR2-Ov-fwX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="7Dw-DH-DVs">
+                            <connections>
+                                <action selector="backHome:" destination="KRx-CX-qF0" id="JVr-TU-qe5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="7Dw-DH-DVs" id="j34-9V-mNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wru-ff-0nQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="133"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="mcC-ld-sWC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fGK-w4-qfR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首頁" image="homeItem" selectedImage="homeS" id="yIw-pf-ZyR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4St-JY-KwT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Av-91-7MQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G62-Te-tLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.199999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Hot View Controller-->
+        <scene sceneID="SOV-QI-jjL">
+            <objects>
+                <viewController id="YtC-Kv-myZ" customClass="HotViewController" customModule="DeomApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="q9a-Wj-Hbx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HotScreen" translatesAutoresizingMaskIntoConstraints="NO" id="vl4-JN-SuT">
+                                <rect key="frame" x="0.0" y="56" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="bZh-Ge-t4D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8TG-CN-LLy"/>
+                    <connections>
+                        <segue destination="KRx-CX-qF0" kind="show" identifier="toCamController" id="e8O-rR-Ssv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voH-C6-nvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="941"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BiM-6s-JoZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vD6-mH-AbZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vm3-7D-ORP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fGK-w4-qfR" kind="relationship" relationship="viewControllers" id="t4Z-Ha-S9t"/>
+                        <segue destination="DBh-a6-wT2" kind="relationship" relationship="viewControllers" id="9bN-Pq-oWb"/>
+                        <segue destination="1ON-4h-UYP" kind="relationship" relationship="viewControllers" id="2es-TV-iE9"/>
+                        <segue destination="105-by-teJ" kind="relationship" relationship="viewControllers" id="zZT-Lw-RnC"/>
+                        <segue destination="QdT-HN-Hn8" kind="relationship" relationship="viewControllers" id="0Bl-ON-v9k"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJR-OZ-aWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1057" y="133"/>
+        </scene>
+        <!--發燒影片-->
+        <scene sceneID="GjO-LT-p4M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DBh-a6-wT2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="發燒影片" image="hotItem" largeContentSizeImage="hotS" selectedImage="hotS" id="ZTg-63-us4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xJT-qn-MKw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YtC-Kv-myZ" kind="relationship" relationship="rootViewController" id="KOm-Qf-lub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6T-9C-iSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="940"/>
+        </scene>
+        <!--Hot View Controller-->
+        <scene sceneID="atk-Hq-tfW">
+            <objects>
+                <viewController id="l9p-M6-23a" customClass="HotViewController" customModule="DeomApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="0EW-eN-cro">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SubScreen" translatesAutoresizingMaskIntoConstraints="NO" id="3VS-Dz-7y2">
+                                <rect key="frame" x="0.0" y="56" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8o1-yD-AIy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MXe-hz-vwo"/>
+                    <connections>
+                        <segue destination="KRx-CX-qF0" kind="show" identifier="toCamController" id="rnw-sQ-e0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgI-94-AHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="1703"/>
+        </scene>
+        <!--訂閱內容-->
+        <scene sceneID="wzT-UC-w7X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ON-4h-UYP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="訂閱內容" image="subscribe" selectedImage="subscribeS" id="Hx9-ar-RpV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pbf-KA-Jbc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="l9p-M6-23a" kind="relationship" relationship="rootViewController" id="68P-Y1-JG9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztr-US-G6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="1702"/>
+        </scene>
+        <!--Hot View Controller-->
+        <scene sceneID="UXx-Fm-zFn">
+            <objects>
+                <viewController id="GC8-iV-dqY" customClass="HotViewController" customModule="DeomApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="5CQ-g0-gvS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EventScreen" translatesAutoresizingMaskIntoConstraints="NO" id="nsj-Vs-icM">
+                                <rect key="frame" x="0.0" y="56" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="fvD-WL-RYd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="USF-mf-amA"/>
+                    <connections>
+                        <segue destination="KRx-CX-qF0" kind="show" identifier="toCamController" id="WhZ-vc-MAp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Woa-Mr-cQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="2442"/>
+        </scene>
+        <!--活動-->
+        <scene sceneID="zAV-fW-GVS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="105-by-teJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="活動" image="event" selectedImage="eventS" id="MjP-EU-oOg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WfC-Wf-Oex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GC8-iV-dqY" kind="relationship" relationship="rootViewController" id="Fdf-79-M5t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9W-L0-YSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="2441"/>
+        </scene>
+        <!--Hot View Controller-->
+        <scene sceneID="I8C-Bd-l7M">
+            <objects>
+                <viewController id="Lv8-Pt-H2c" customClass="HotViewController" customModule="DeomApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="j1K-Av-ASz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MediaScreen" translatesAutoresizingMaskIntoConstraints="NO" id="mNn-Hb-xey">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="pyv-ns-cIJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tEU-t5-EnQ"/>
+                    <connections>
+                        <segue destination="KRx-CX-qF0" kind="show" identifier="toCamController" id="qxb-Qs-u4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sI2-fa-qnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="3186.6566716641682"/>
+        </scene>
+        <!--媒體庫-->
+        <scene sceneID="h9Z-uI-ILh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QdT-HN-Hn8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="媒體庫" image="media" selectedImage="mediaS" id="zwM-Wz-m7n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="baD-te-sNa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lv8-Pt-H2c" kind="relationship" relationship="rootViewController" id="w7v-d6-gZ3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxd-1p-pfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="3186"/>
         </scene>
     </scenes>
     <resources>
-        <image name="zen" width="120" height="120"/>
+        <image name="CAM-1" width="708" height="1152"/>
+        <image name="EventScreen" width="710" height="1142"/>
+        <image name="Home" width="718" height="1068"/>
+        <image name="HotScreen" width="716" height="1050"/>
+        <image name="MediaScreen" width="718" height="1066"/>
+        <image name="SubScreen" width="718" height="1070"/>
+        <image name="event" width="31" height="28"/>
+        <image name="eventS" width="31" height="31"/>
+        <image name="homeItem" width="31" height="29"/>
+        <image name="homeS" width="31" height="25"/>
+        <image name="hotItem" width="31" height="25"/>
+        <image name="hotS" width="31" height="28"/>
+        <image name="media" width="31" height="24"/>
+        <image name="mediaS" width="31" height="24"/>
+        <image name="subscribe" width="31" height="25"/>
+        <image name="subscribeS" width="31" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qxb-Qs-u4I"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.90196078431372551" green="0.019607843137254902" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
 </document>
